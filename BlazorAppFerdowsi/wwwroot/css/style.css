@@ -1,0 +1,127 @@
+﻿
+
+/*اگر فرمت wff2 
+    یک فونت را نداشته باشیم باید به این سبک کدنویسی کنیم 
+*/
+
+@font-face {
+    font-family: 'digikala';
+    src: url('../fonts/digikala.eot?#')format('eot'), url('../fonts/digikala.ttf')format('truetype'), url('../fonts/digikala.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shabnam-Bold';
+    src: url('../fonts/Shabnam-Bold.eot?#')format('eot'),url('../fonts/Shabnam-Bold.ttf')format('truetype'),url('../fonts/Shabnam-Bold.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Nav-Bar*/
+.nav-link {
+    font-family: 'digikala' !important;
+}
+.navbar-brand {
+    font-family: 'digikala' !important;
+}
+
+/*End Nav-Bar*/
+/*Home*/
+/*مشخص کردن کجای صفحه*/
+.landing-page {
+    /* ینی روی همون موقعیتی که هست باشه*/
+    position: relative;
+    top: 5px;
+    left: 0px;
+    /*کل صفحه*/
+    width: 100%;
+    /*ویوپورت ارتفاعش 20 باشه*/
+    height: 100vh;
+    /*سطحش*/
+    z-index: -1;
+    /*این کد برای درک محدود لندینگ پیج بوده و کاربردی ندارد*/
+    /*  background-color: #74992e;*/
+}
+
+/* از نقطه بالای والد شروع بشه و تمام فضا رو بگیره
+    و فاصله بین نووبار و عکس صفحه رو نشون بده*/
+
+.home-wrap {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    /*این کد برای درک محدود هوم رپ بوده و کاربردی ندارد*/
+     /*border: 1px solid #000*/
+}
+
+/*عکس بکگراند رو به صورت فیکس نشون بده  */
+.home-inner {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url('../image/Nature in different (17).jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+/*فعلا کپشنی نداریم فقط کدهای آموزشی درسمن را انجام میدهیم */
+.caption {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    /*جون قصد داریم بالاتر از لایه قبلی باشد*/
+    z-index: 1;
+    color: #0026ff;
+    text-shadow: revert-layer;
+    text-transform: capitalize;
+}
+
+    /*هر یک رم معادل 16 پیکسل است*/
+    .caption h2 {
+        font-family: Shabnam-Bold;
+        font-size: 4rem;
+        font-weight: 700;
+        /*شدوو دادن به تکست */
+        text-shadow: 0.1rem 0.1rem 0.5rem #ffffff;
+        /* فاصله از پایین با متن بعدی*/
+        padding-bottom: 1rem;
+        /*فاصله هر حرف متن با دیگر حروف*/
+        letter-spacing: 0.1rem;
+    }
+
+    /*این تگ اصلا وجود ندارد طبق آموزش صرفا سی اس اس آن نوشته شده*/
+    .caption h4 {
+        font-family: digikala;
+        font-size: 2rem;
+        font-weight: 400;
+        padding-bottom: 1.5rem;
+        text-shadow: 0.1rem 0.1rem 0.2rem #ffffff;
+    }
+
+    .caption .btn-start {
+        font-family: digikala;
+        font-size: 24px;
+        font-weight: 50;
+        border-width: 0.3rem;
+        /*گردی حاشیه دور دکمه*/
+        border-radius: 0.5rem;
+        /*فاصله از بالاو پایین و فاصله دوم از چپ و راست*/
+        padding: 0.2rem 0.8rem;
+    }
+
+
+.area{
+/*صفر اول مارجین تاپ آتو یعنی وسط چین و صفر دوم مارجین پایین است*/
+    margin: 0 auto 0;
+/**/
+
+}
+
+
+
+/*EndHome*/
